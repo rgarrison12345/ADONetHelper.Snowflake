@@ -13,26 +13,26 @@ namespace ADONetHelper.Snowflake
     {
         #region Constructors
         /// <summary>
-        /// The overloaded constuctor that will initialize the <paramref name="connectionString"/>, And <paramref name="queryCommandType"/>
+        /// The overloaded constuctor that will initialize the<paramref name="connectionString"/>, And<paramref name="queryCommandType"/>
         /// </summary>
-        /// <param name="connectionString">The connection string used to query a data store</param>
-        /// <param name="queryCommandType">Represents how a command should be interpreted by the data provider</param>
-        //public SnowflakeClient(string connectionString, CommandType queryCommandType) : base(connectionString, queryCommandType, NpgsqlFactory.Instance)
-        //{
+        /// <param name = "connectionString" > The connection string used to query a data store</param>
+        /// <param name = "queryCommandType" > Represents how a command should be interpreted by the data provider</param>
+        public SnowflakeClient(string connectionString, CommandType queryCommandType) : base(connectionString, queryCommandType, SnowflakeDbFactory.Instance)
+        {
 
-        //}
-        ///// <summary>
-        ///// The overloaded constuctor that will initialize the <paramref name="connectionString"/>
-        ///// </summary>
-        ///// <param name="connectionString">The connection string used to query a data store</param>
-        //public SnowflakeClient(string connectionString) : base(connectionString, null)
-        //{
-        //}
+        }
         /// <summary>
         /// Intializes the <see cref="SnowflakeClient"/> with a <see cref="ISqlExecutor"/>
         /// </summary>
         /// <param name="executor">An instance of <see cref="ISqlExecutor"/></param>
         public SnowflakeClient(ISqlExecutor executor) : base(executor)
+        {
+        }
+        /// <summary>
+        /// The overloaded constuctor that will initialize the <paramref name="connectionString"/>
+        /// </summary>
+        /// <param name="connectionString">The connection string used to query a data store</param>
+        public SnowflakeClient(string connectionString) : base(connectionString, SnowflakeDbFactory.Instance)
         {
         }
         /// <summary>
