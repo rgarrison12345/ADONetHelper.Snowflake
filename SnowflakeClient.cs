@@ -15,11 +15,10 @@ namespace ADONetHelper.Snowflake
         /// <summary>
         /// The overloaded constuctor that will initialize the<paramref name="connectionString"/>, And<paramref name="queryCommandType"/>
         /// </summary>
-        /// <param name = "connectionString" > The connection string used to query a data store</param>
-        /// <param name = "queryCommandType" > Represents how a command should be interpreted by the data provider</param>
+        /// <param name="connectionString"> The connection string used to query a data store</param>
+        /// <param name="queryCommandType"> Represents how a command should be interpreted by the data provider</param>
         public SnowflakeClient(string connectionString, CommandType queryCommandType) : base(connectionString, queryCommandType, SnowflakeDbFactory.Instance)
         {
-
         }
         /// <summary>
         /// Intializes the <see cref="SnowflakeClient"/> with a <see cref="ISqlExecutor"/>
