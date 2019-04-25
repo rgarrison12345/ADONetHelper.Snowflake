@@ -16,7 +16,7 @@
     <Title>ADONetHelper.Snowflake</Title>
     <PackageId>ADONetHelper.Snowflake</PackageId>
     <Description>Extends ADONetHelper library to Snowflake</Description>
-    <PackageReleaseNotes>Updating to Snowflake.Data 1.0.8</PackageReleaseNotes>
+    <PackageReleaseNotes>Updating to Snowflake.Data 1.0.9</PackageReleaseNotes>
     <AssemblyName>ADONetHelper.Snowflake</AssemblyName>
     <RootNamespace>ADONetHelper.Snowflake</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ADONetHelper.Snowflake.xml</DocumentationFile>
@@ -28,7 +28,7 @@
   <ItemGroup>
     <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
     <PackageReference Include="ADONetHelper" version="3.2.1" />
-    <PackageReference Include="Snowflake.Data" Version="1.0.8" />
+    <PackageReference Include="Snowflake.Data" Version="1.0.9" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugSymbols>true</DebugSymbols>
