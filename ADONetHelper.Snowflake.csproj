@@ -7,7 +7,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.10</Version>
+    <Version>1.0.11</Version>
     <PackageTags>Snowflake Snowflake.Data ORM ADO.NET ADO SQL .NET Database RDBMS Generic DAL ANSI</PackageTags>
     <Copyright>Copyright © Robert Garrison 2019</Copyright>
     <Authors>Robert Garrison</Authors>
@@ -16,7 +16,7 @@
     <Title>ADONetHelper.Snowflake</Title>
     <PackageId>ADONetHelper.Snowflake</PackageId>
     <Description>Extends ADONetHelper library to Snowflake</Description>
-    <PackageReleaseNotes>Updating to Snowflake.Data 1.0.13 and ADONetHelper 3.3.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Updating to Snowflake.Data 1.0.14</PackageReleaseNotes>
     <AssemblyName>ADONetHelper.Snowflake</AssemblyName>
     <RootNamespace>ADONetHelper.Snowflake</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ADONetHelper.Snowflake.xml</DocumentationFile>
@@ -28,7 +28,7 @@
   <ItemGroup>
     <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
     <PackageReference Include="ADONetHelper" version="3.3.0" />
-    <PackageReference Include="Snowflake.Data" Version="1.0.13" />
+    <PackageReference Include="Snowflake.Data" Version="1.0.14" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugSymbols>true</DebugSymbols>
