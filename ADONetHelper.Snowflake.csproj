@@ -2,12 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net46;</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageLicenseUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <PackageTags>Snowflake Snowflake.Data ORM ADO.NET ADO SQL .NET Database RDBMS Generic DAL ANSI</PackageTags>
     <Copyright>Copyright © Robert Garrison 2019</Copyright>
     <Authors>Robert Garrison</Authors>
@@ -16,7 +15,7 @@
     <Title>ADONetHelper.Snowflake</Title>
     <PackageId>ADONetHelper.Snowflake</PackageId>
     <Description>Extends ADONetHelper library to Snowflake</Description>
-    <PackageReleaseNotes>Updating to Snowflake.Data 1.0.16</PackageReleaseNotes>
+    <PackageReleaseNotes>Updating to Snowflake.Data 1.1.0 and ADONetHelper 3.4.0</PackageReleaseNotes>
     <AssemblyName>ADONetHelper.Snowflake</AssemblyName>
     <RootNamespace>ADONetHelper.Snowflake</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ADONetHelper.Snowflake.xml</DocumentationFile>
@@ -24,11 +23,12 @@
     <DefineConstants>TRACE;</DefineConstants>
     <Prefer32Bit>false</Prefer32Bit>
     <OutputType>Library</OutputType>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
-    <PackageReference Include="ADONetHelper" version="3.3.2" />
-    <PackageReference Include="Snowflake.Data" Version="1.0.16" />
+    <PackageReference Include="ADONetHelper" version="3.4.0" />
+    <PackageReference Include="Snowflake.Data" Version="1.1.0" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugSymbols>true</DebugSymbols>
