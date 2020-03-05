@@ -1,4 +1,5 @@
 ﻿#region Using Statements
+using ADONetHelper.Core;
 using Snowflake.Data.Client;
 using System.Data;
 #endregion

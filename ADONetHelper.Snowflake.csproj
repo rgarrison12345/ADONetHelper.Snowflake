@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net46;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/rgarrison12345/ADONetHelper.Snowflake.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.1.2</Version>
+    <Version>1.2.0</Version>
     <PackageTags>Snowflake Snowflake.Data ORM ADO.NET ADO SQL .NET Database RDBMS Generic DAL ANSI</PackageTags>
-    <Copyright>Copyright © Robert Garrison 2019</Copyright>
+    <Copyright>Copyright © Robert Garrison 2020</Copyright>
     <Authors>Robert Garrison</Authors>
     <Company>Robert Garrison</Company>
     <Product>ADONetHelper.Snowflake</Product>
     <Title>ADONetHelper.Snowflake</Title>
     <PackageId>ADONetHelper.Snowflake</PackageId>
     <Description>Extends ADONetHelper library to Snowflake</Description>
-    <PackageReleaseNotes>Updating to Snowflake.Data 1.1.0 and ADONetHelper 3.4.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Updating to Snowflake.Data 1.1.1 and ADONetHelper 4.0.9.  Removing .NET 4.6 build</PackageReleaseNotes>
     <AssemblyName>ADONetHelper.Snowflake</AssemblyName>
     <RootNamespace>ADONetHelper.Snowflake</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ADONetHelper.Snowflake.xml</DocumentationFile>
@@ -27,8 +27,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
-    <PackageReference Include="ADONetHelper" version="3.4.0" />
-    <PackageReference Include="Snowflake.Data" Version="1.1.0" />
+    <PackageReference Include="ADONetHelper" version="4.0.9" />
+    <PackageReference Include="Snowflake.Data" Version="1.1.1" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugSymbols>true</DebugSymbols>
